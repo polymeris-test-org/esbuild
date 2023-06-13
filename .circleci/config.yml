@@ -9,7 +9,7 @@ jobs:
     executor: node/default
     working_directory: ~/project/lib
     steps:
-      - checkout
+      - checkout:
           path: ~/project
       - node/install-packages:
           pkg-manager: yarn
