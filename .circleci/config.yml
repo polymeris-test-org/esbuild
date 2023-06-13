@@ -7,9 +7,10 @@ jobs:
   test-node:
     # Install node dependencies and run tests
     executor: node/default
-    working_directory: lib
+    working_directory: ~/project/lib
     steps:
       - checkout
+          path: ~/project
       - node/install-packages:
           pkg-manager: yarn
       - run:
